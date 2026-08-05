@@ -82,10 +82,11 @@ inspectable independently of generation.
 
 Set in `.env` or as environment variables:
 
-| Variable | Default | Meaning |
-|---|---|---|
-| `N_MOVIES` | 300 | Size of the subset |
-| `TOP_K` | 4 | Chunks retrieved per query |
-| `LLM_MODEL` | `gemini-2.5-flash` | Use `gemini-2.5-flash-lite` for a higher daily quota |
-| `MIN_YEAR` | 1990 | Earliest release year kept |
+| Variable | Default            | Meaning |
+|---|--------------------|---|
+| `N_MOVIES` | 300                | Size of the subset |
+| `GOOGLE_API_KEY` | Get a free API key                | Get a free API key |
+| `TOP_K` | 4                  | Chunks retrieved per query |
+| `LLM_MODEL` | `gemini-3.6-flash` | Use `gemini-3.6-flash` for a higher daily quota |
+| `MIN_YEAR` | 1990               | Earliest release year kept |
 
