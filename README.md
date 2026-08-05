@@ -5,7 +5,7 @@ plots and returns structured JSON.
 
 ```
 CSV subset → 300-word chunks → MiniLM embeddings → FAISS (in-memory)
-           → top-k retrieval → Gemini 2.5 Flash → {answer, contexts, reasoning}
+           → top-k retrieval → Gemini 3.6 Flash → {answer, contexts, reasoning}
 ```
 
 ## Stack
@@ -23,9 +23,9 @@ Nothing here costs money.
 **1. Clone and install**
 
 ```bash
-git clone https://github.com/<you>/mini-rag-movies.git
+git clone https://github.com/miniduvisana/movie-plot-rag.git
 cd mini-rag-movies
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+python -m venv .venv && source .venv/bin/activate   
 pip install -r requirements.txt
 ```
 
