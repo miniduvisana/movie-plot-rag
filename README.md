@@ -89,15 +89,3 @@ Set in `.env` or as environment variables:
 | `LLM_MODEL` | `gemini-2.5-flash` | Use `gemini-2.5-flash-lite` for a higher daily quota |
 | `MIN_YEAR` | 1990 | Earliest release year kept |
 
-## Swapping the LLM
-
-The only Gemini-specific code is `generate()` in `mini_rag.py`. To use Groq's free tier,
-a local Ollama model, or OpenAI, replace that one function — retrieval is untouched.
-
-## Known limitations
-
-- Fixed-size word chunks can split a scene across boundaries; the 50-word overlap softens
-  this but does not eliminate it.
-- Dense retrieval alone struggles with exact proper nouns. A BM25 + vector hybrid would be
-  the first upgrade.
-- The index is rebuilt on every start. Fine at 300 movies; persist to disk beyond that.
